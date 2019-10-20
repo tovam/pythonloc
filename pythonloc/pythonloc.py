@@ -13,7 +13,7 @@ def executable():
     return strize(subprocess.check_output(["which", "python"])).strip()
 
 def version_info():
-    return strize(subprocess.check_output([executable(), "-c", 'import sys;print(sys.version_info.major, sys.version_info.minor)'])).strip().split()
+    return strize(subprocess.check_output([executable(), "-c", 'import sys;print("%d %d"%(sys.version_info.major, sys.version_info.minor))'])).strip().split()
 
 def _get_pypackages_lib_path(script_path=None):
     """returns path in compliance with PEP 582
