@@ -37,11 +37,11 @@ This is a Python implementation of [PEP 582](https://www.python.org/dev/peps/pep
 ## Installation: What's in the box?
 After installing with
 ```
-pip install --user pythonloc
+pip install --user git+https://github.com/tovam/pythonloc
 ```
 or
 ```
-python3 -m pip install --user pythonloc
+python3 -m pip install --user git+https://github.com/tovam/pythonloc
 ```
 you will have four CLI tools available to you: **pythonloc**, **piploc**, **pipx**, and **pipfreezeloc**.
 
